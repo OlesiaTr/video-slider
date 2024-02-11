@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Video slider with Vimeo API</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="loading-spinner"></div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Modal -->
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <div class="swiper modalSwiper">
+        <div class="swiper-wrapper">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Vimeo Player -->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
